@@ -1,1 +1,14 @@
-<p>sidebar works!</p>
+<div class="sidebar-container">
+  <div class="menu-container">
+    <ng-container *ngFor="let menuItem of menuItems">
+      <a class="menu-bar-link" [routerLink]="menuItem.route" routerLinkActive="activeMenuItem">
+        <div class="menu-item-container">
+          <fa-icon [icon]="menuItem.iconSource"></fa-icon>
+          <p class="menu-item">
+            {{ menuItem.title }}
+          </p>
+        </div>
+      </a>
+    </ng-container>
+  </div>
+</div>

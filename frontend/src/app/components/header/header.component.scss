@@ -1,0 +1,27 @@
+@import '../../../assets/scss/variables.scss';
+@import '../../../assets/scss/mixins.scss';
+
+.header-container {
+  @include flex(row, space-between, center);
+  padding: 32px 64px;
+  background: $color-grey-light;
+
+  .user-container {
+    @include flex(row, unset, center);
+    gap: 44px;
+    color: $color-font-light;
+
+    a > fa-icon {
+      color: $color-font-light;
+      font-size: 20px;
+    }
+
+    .profile {
+      .profile-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+      }
+    }
+  }
+}

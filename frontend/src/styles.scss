@@ -1,5 +1,8 @@
-@import '~normalize.css';
-// @import url(normalize.css);
+@import url(normalize.css);
 
 @import './assets/scss/mixins.scss';
 @import './assets/scss/variables.scss';
+
+body {
+  font-family: $Satoshi;
+}
