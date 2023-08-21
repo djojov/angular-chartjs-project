@@ -1,13 +1,12 @@
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { faCalendar, faMap } from '@fortawesome/free-regular-svg-icons';
 import {
-  faAddressBook,
-  faCalendar,
-  faFileLines,
-  faMap,
-  faPaperPlane,
-  faRectangleList,
-  faSmile,
-} from '@fortawesome/free-regular-svg-icons';
+  faChartArea,
+  faChartLine,
+  faChartPie,
+  faChartSimple,
+  faWandMagicSparkles,
+} from '@fortawesome/free-solid-svg-icons';
 
 export class MenuItem {
   id!: string;
@@ -19,44 +18,44 @@ export class MenuItem {
 export const menuItems: MenuItem[] = [
   {
     id: '1',
-    title: 'Home',
+    title: 'Dashboard',
     iconSource: faMap,
     route: '',
   },
   {
     id: '2',
-    title: 'Configuration',
-    iconSource: faRectangleList,
-    route: '/configuration',
+    title: 'Bar Charts',
+    iconSource: faChartSimple,
+    route: '/bar-charts',
   },
   {
     id: '3',
-    title: 'Users',
-    iconSource: faAddressBook,
-    route: '/users',
+    title: 'Line Charts',
+    iconSource: faChartLine,
+    route: '/line-charts',
   },
   {
     id: '4',
-    title: 'Projects',
-    iconSource: faPaperPlane,
-    route: '/projects',
+    title: 'Bubble Charts',
+    iconSource: faChartArea,
+    route: '/bubble-charts',
   },
   {
     id: '5',
-    title: 'Vacations',
-    iconSource: faCalendar,
-    route: '/vacations',
+    title: 'Pie Charts',
+    iconSource: faChartPie,
+    route: '/pie-charts',
   },
   {
     id: '6',
-    title: 'Benefits',
-    iconSource: faSmile,
-    route: '/benefits',
+    title: 'Generator',
+    iconSource: faWandMagicSparkles,
+    route: '/generator',
   },
   {
     id: '7',
-    title: 'Reports',
-    iconSource: faFileLines,
-    route: '/reports',
+    title: 'Calendar',
+    iconSource: faCalendar,
+    route: '/calendar',
   },
 ];
