@@ -5,7 +5,7 @@
   </div>
   <div class="menu-container">
     <ng-container *ngFor="let menuItem of menuItems">
-      <a class="menu-bar-link" [routerLink]="menuItem.route" routerLinkActive="activeMenuItem">
+      <a class="menu-bar-link" [routerLink]="menuItem.route" routerLinkActive="is-active">
         <div class="menu-item-container">
           <fa-icon [icon]="menuItem.iconSource"></fa-icon>
           <p class="menu-item">

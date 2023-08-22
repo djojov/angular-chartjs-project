@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './pages';
+import { BarChartsComponent, HomeComponent } from './pages';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  // { path: 'configuration', component: ConfigurationComponent },
-  // { path: 'register-user', component: RegisterUserComponent },
-  { path: '**', redirectTo: '', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'bar-charts', component: BarChartsComponent },
+  { path: '**', redirectTo: 'home', pathMatch: 'full' },
 ];
 
 @NgModule({

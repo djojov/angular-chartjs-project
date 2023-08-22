@@ -24,7 +24,7 @@
       text-decoration: none;
       color: $color-font-light;
 
-      &.activeMenuItem {
+      &.is-active {
         .menu-item-container {
           color: $color-font-dark;
           background-color: $color-grey-darker;
@@ -36,7 +36,7 @@
         margin-top: 10px;
         @include flex(row, unset, center);
 
-        &:hover:not(.activeMenuItem > .menu-item-container) {
+        &:hover:not(.is-active > .menu-item-container) {
           background-color: $color-grey-dark;
           border-radius: 12px;
         }

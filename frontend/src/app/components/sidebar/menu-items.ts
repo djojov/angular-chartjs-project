@@ -20,7 +20,7 @@ export const menuItems: MenuItem[] = [
     id: '1',
     title: 'Dashboard',
     iconSource: faMap,
-    route: '',
+    route: '/home',
   },
   {
     id: '2',
