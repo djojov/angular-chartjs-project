@@ -1,0 +1,30 @@
+@import '../../../assets/scss/variables.scss';
+@import '../../../assets/scss/mixins.scss';
+
+.calendar-container {
+  padding: 40px;
+  padding-top: 0;
+  .calendar-wrapper {
+    border-radius: 12px;
+    background-color: $color-grey-light;
+    padding: 48px;
+    box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+
+    button {
+      padding: 16px 24px;
+      color: $color-font-dark;
+      border: 2px solid $color-font-dark;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: background-color 0.2s ease-in-out;
+      background: transparent;
+      cursor: pointer;
+      margin-bottom: 48px;
+    }
+
+    button:hover {
+      background-color: $color-font-dark;
+      color: $color-grey-light;
+    }
+  }
+}

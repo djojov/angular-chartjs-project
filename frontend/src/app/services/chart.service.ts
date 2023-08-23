@@ -1,11 +1,10 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { environment } from 'src/environments/environment';
 
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type': 'application/json',
-    'X-My-Custom-Header': `${environment.API_KEY}`,
+    // 'X-My-Custom-Header': `${environment.API_KEY}`,
     'Access-Control-Allow-Origin': '*',
   }),
 };
