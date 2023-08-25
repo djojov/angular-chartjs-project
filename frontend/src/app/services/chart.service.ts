@@ -1,29 +1,17 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-
-const httpOptions = {
-  headers: new HttpHeaders({
-    'Content-Type': 'application/json',
-    // 'X-My-Custom-Header': `${environment.API_KEY}`,
-    'Access-Control-Allow-Origin': '*',
-  }),
-};
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ChartService {
-  private baseUrl = 'https://api.coinranking.com/v2/coins';
-  private proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+  private url = '/charts';
 
   constructor(private http: HttpClient) {}
 
-  cryptoData() {
-    const url = `${this.proxyUrl}${this.baseUrl}`;
-    return this.http.get(url, httpOptions);
-  }
-
-  testData() {
-    return this.http.get('http://localhost:3000/charts');
+  getChartData() {
+    const url = `${environment.baseUrl}${this.url}`;
+    return this.http.get(url);
   }
 }

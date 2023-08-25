@@ -21,6 +21,7 @@ export class CalendarComponent {
     weekends: false,
     editable: true,
     eventColor: '#2c2f32',
+    firstDay: 1,
   };
 
   toggleWeekends() {
