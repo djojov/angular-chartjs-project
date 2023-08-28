@@ -15,10 +15,15 @@ export class HomeComponent implements OnInit {
   bpDiaData: any;
   bloodPressureChart: any;
   fluidVolumeChart: any;
+  contentLoaded = true;
 
   constructor(private service: ChartService) {}
 
   ngOnInit() {
+    setTimeout(() => {
+      this.contentLoaded = false;
+    }, 500);
+
     this.service.getChartData().subscribe((res) => {
       this.result = res;
       this.fluidVolumeData = this.result.data.map((entry: any) => entry['OH [L]']);

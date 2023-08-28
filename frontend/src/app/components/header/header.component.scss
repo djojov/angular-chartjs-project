@@ -28,6 +28,19 @@
     a > fa-icon {
       color: $color-font-light;
       font-size: 20px;
+      position: relative;
+    }
+
+    a:nth-child(2) > fa-icon::after {
+      content: '';
+      width: 10px;
+      height: 10px;
+      background: #ff523f;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      border-radius: 20px;
     }
 
     .profile {
