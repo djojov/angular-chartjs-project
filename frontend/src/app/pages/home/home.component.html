@@ -1,3 +1,24 @@
-<div class="home-container">
-  <app-page-info pageName="Dashboard"></app-page-info>
+<app-page-info pageName="Dashboard"></app-page-info>
+<div class="container">
+  <div class="insights-wrapper">
+    <div class="insight" style="background: rgba(33, 146, 255, 0.2)">
+      <p class="data">1367 <span>rows</span></p>
+      <p class="info">Total data</p>
+    </div>
+    <div class="insight" style="background: rgba(166, 255, 0, 0.2)">
+      <p class="data">138</p>
+      <p class="info">Avg BP sys</p>
+    </div>
+    <div class="insight" style="background: rgba(255, 184, 76, 0.2)">
+      <p class="data">598</p>
+      <p class="info">Avg Re [Ohm]</p>
+    </div>
+    <div class="insight" style="background: rgba(255, 148, 204, 0.2)">
+      <p class="data">23.9</p>
+      <p class="info">Avg ICW [L]</p>
+    </div>
+  </div>
+  <div class="chart-wrapper">
+    <canvas id="canvas">{{ chart }}</canvas>
+  </div>
 </div>
