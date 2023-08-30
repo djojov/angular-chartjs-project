@@ -1,6 +1,6 @@
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { faCalendar, faMap } from '@fortawesome/free-regular-svg-icons';
-import { faChartArea, faChartLine, faFlaskVial, faWandMagicSparkles } from '@fortawesome/free-solid-svg-icons';
+import { faChartArea, faChartLine, faFlaskVial } from '@fortawesome/free-solid-svg-icons';
 
 export class MenuItem {
   id!: string;
@@ -34,12 +34,12 @@ export const menuItems: MenuItem[] = [
     iconSource: faChartArea,
     route: '/impedance',
   },
-  {
-    id: '5',
-    title: 'Generator',
-    iconSource: faWandMagicSparkles,
-    route: '/generator',
-  },
+  // {
+  //   id: '5',
+  //   title: 'Generator',
+  //   iconSource: faWandMagicSparkles,
+  //   route: '/generator',
+  // },
   {
     id: '6',
     title: 'Calendar',

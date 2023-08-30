@@ -9,7 +9,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent, SidebarComponent } from './components';
 import { PageInfoComponent } from './components/page-info/page-info.component';
 import { HomeComponent } from './pages';
-import { BarChartsComponent } from './pages/bar-charts/bar-charts.component';
 import { BloodPressureComponent } from './pages/blood-pressure/blood-pressure.component';
 import { CalendarComponent } from './pages/calendar/calendar.component';
 import { FluidVolumeComponent } from './pages/fluid-volume/fluid-volume.component';
@@ -22,7 +21,6 @@ import { ImpedanceComponent } from './pages/impedance/impedance.component';
     HeaderComponent,
     HomeComponent,
     PageInfoComponent,
-    BarChartsComponent,
     CalendarComponent,
     BloodPressureComponent,
     FluidVolumeComponent,

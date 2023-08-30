@@ -2,7 +2,7 @@
 @import '../../../assets/scss/mixins.scss';
 
 .header-container {
-  @include flex(row, space-between, center);
+  @include flex(row, flex-end, center);
   padding: 28px 40px;
   background: $color-grey-light;
 
