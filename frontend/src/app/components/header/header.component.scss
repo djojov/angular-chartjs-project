@@ -1,0 +1,54 @@
+@import '../../../assets/scss/variables.scss';
+@import '../../../assets/scss/mixins.scss';
+
+.header-container {
+  @include flex(row, flex-end, center);
+  padding: 28px 40px;
+  background: $color-grey-light;
+
+  .new-dashboard {
+    padding: 16px 24px;
+    color: $color-font-dark;
+    border: 2px solid $color-font-dark;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .new-dashboard:hover {
+    background-color: $color-font-dark;
+    color: $color-grey-light;
+  }
+
+  .user-container {
+    @include flex(row, unset, center);
+    gap: 44px;
+    color: $color-font-light;
+
+    a > fa-icon {
+      color: $color-font-light;
+      font-size: 20px;
+      position: relative;
+    }
+
+    a:nth-child(2) > fa-icon::after {
+      content: '';
+      width: 10px;
+      height: 10px;
+      background: #ff523f;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      border-radius: 20px;
+    }
+
+    .profile {
+      .profile-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+      }
+    }
+  }
+}

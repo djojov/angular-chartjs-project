@@ -1,0 +1,58 @@
+@import '../../../assets/scss/variables.scss';
+@import '../../../assets/scss/mixins.scss';
+
+.sidebar-container {
+  padding: 28px;
+  padding-top: 0px;
+
+  .logo-container {
+    @include flex(row, unset, center);
+    gap: 12px;
+    padding-top: 24px;
+
+    .logo {
+      border-radius: 30%;
+      width: 52px;
+      height: auto;
+    }
+  }
+
+  .menu-container {
+    margin-top: 100px;
+
+    .menu-bar-link {
+      text-decoration: none;
+      color: $color-font-light;
+
+      &.is-active {
+        .menu-item-container {
+          color: $color-font-dark;
+          background-color: $color-grey-darker;
+          border-radius: 12px;
+        }
+      }
+
+      .menu-item-container {
+        margin-top: 10px;
+        @include flex(row, unset, center);
+
+        &:hover:not(.is-active > .menu-item-container) {
+          background-color: $color-grey-dark;
+          border-radius: 12px;
+        }
+
+        fa-icon.ng-fa-icon {
+          margin-left: 16px;
+          margin-right: 16px;
+          font-size: 20px;
+        }
+
+        .menu-item {
+          margin-left: 8px;
+          font-size: 16px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

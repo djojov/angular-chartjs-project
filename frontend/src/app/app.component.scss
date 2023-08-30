@@ -1,0 +1,18 @@
+@import '../assets/scss/mixins.scss';
+@import '../assets/scss/variables.scss';
+
+.app-container {
+  background: $color-grey-dark;
+  @include flex();
+  height: 100%;
+
+  .navigation-container {
+    background: $color-grey-light;
+    width: 320px;
+    margin-right: 2px;
+  }
+
+  .content-container {
+    width: calc(100% - 322px);
+  }
+}

@@ -1,0 +1,9 @@
+<app-page-info pageName="Calendar"></app-page-info>
+<div class="calendar-container">
+  <div class="calendar-wrapper">
+    <button (click)="toggleWeekends()">Toggle Weekends</button>
+    <button style="margin-left: 20px" (click)="addEvent()">Add event</button>
+    <full-calendar [deepChangeDetection]="true" [options]="calendarOptions"></full-calendar>
+  </div>
+  <div class="calendar"></div>
+</div>

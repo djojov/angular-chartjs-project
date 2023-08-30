@@ -1,0 +1,18 @@
+<div class="sidebar-container">
+  <div class="logo-container">
+    <img class="logo" src="../../../assets/images/logo.png" alt="logo" />
+    <p class="project-name">Software Architecture for Dynamic Frontend</p>
+  </div>
+  <div class="menu-container">
+    <ng-container *ngFor="let menuItem of menuItems">
+      <a class="menu-bar-link" [routerLink]="menuItem.route" routerLinkActive="is-active">
+        <div class="menu-item-container">
+          <fa-icon [icon]="menuItem.iconSource"></fa-icon>
+          <p class="menu-item">
+            {{ menuItem.title }}
+          </p>
+        </div>
+      </a>
+    </ng-container>
+  </div>
+</div>
